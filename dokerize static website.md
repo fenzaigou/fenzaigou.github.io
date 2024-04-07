@@ -13,3 +13,14 @@ Suddenly I understand that it is the vinilla vite project has problem.
 And now I am trying to dockerize my static html page with httpd.
 
 Fingers crossed for that!
+
+---
+update:
+
+``` docker
+FROM httpd
+
+COPY ./dist /usr/local/apache2/htdocs
+```
+
+Success!
